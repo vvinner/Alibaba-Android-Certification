@@ -1,0 +1,424 @@
+[
+  {
+    "id": 1,
+    "title": "将( )属性设置为false，防止adb backup导出数据",
+    "multi": false,
+    "choose": [
+      {
+        "title": "android:allowBackup",
+        "result": true
+      },
+      {
+        "title": "android:debuggable"
+      },
+      {
+        "title": "android:permission"
+      },
+      {
+        "title": "android:theme"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "定义某个style的以下行为哪些不符合规范( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "可以任意给style资源命名",
+        "result": true
+      },
+      {
+        "title": "当希望在某个BaseTheme的基础上扩展定义某个Activity的theme时，定义的style如下：<style name=\"BaseTheme.ThisActivityTheme\">… </style>"
+      },
+      {
+        "title": "live模块的style文件名称为：customstyle.xml",
+        "result": true
+      },
+      {
+        "title": "所有的style都是独立的，不存在继承关系",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "以下关于Activity #onDestroy方法的描述错误的是( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "可以在该方法中处理保存应用数据的相关逻辑",
+        "result": true
+      },
+      {
+        "title": "Activty子类重载该方法时，必须调用super.onDestroy( )"
+      },
+      {
+        "title": "应该在该方法注销之前注册的BroadcastReceiver"
+      },
+      {
+        "title": "在该方法中释放Activity相关线程资源",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "以下关于使用DialogFragment替换Dialog的说法正确的是( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "DiaolgoFragment可以借助FragmentManager自动管理对话框状态，比如屏幕旋转后Dialog状态的恢复",
+        "result": true
+      },
+      {
+        "title": "DialogFragment可A便利的使用自定义Dialog和系统Dialog",
+        "result": true
+      },
+      {
+        "title": "甶于系统Dialog是独立于Activity的系统，管理状态复杂，代码量比较多"
+      },
+      {
+        "title": "DialogFragment便于代码解耦合合、复用",
+        "result": true
+      },
+      {
+        "title": "系统Dialog在屏幕旋转的时候可能会导致内存泄漏",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "以下说法正确的是。",
+    "multi": true,
+    "choose": [
+      {
+        "title": "应用发布前确保android:debuggable属性设置为false",
+        "result": true
+      },
+      {
+        "title": "不要把敏感信息打印到log中",
+        "result": true
+      },
+      {
+        "title": "不要广播敏感信息，只能在本应^使用Loca旧roadcast，避免被别的应用收到，或者setPackage做限制",
+        "result": true
+      },
+      {
+        "title": "数据存储在Sqlite或者轻量级存储需要对数据进行加密，取出来的时候进行解密",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "在BroadcastReceiver中进行耗时操作，下列说法正确的是( )",
+    "multi": false,
+    "choose": [
+      {
+        "title": "在onReceive( )中可以执行耗时操作"
+      },
+      {
+        "title": "在onBind( )方法中可以通过new thread( )执行耗时操作"
+      },
+      {
+        "title": "在onBind( )方法中，可以通过调用IntentService去执行耗时操作",
+        "result": true
+      },
+      {
+        "title": "在onBind( )方法中，可以通过创建ThreadPool执行耗时操作"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "关于组件间数据传递的说法错误的是( )",
+    "multi": false,
+    "choose": [
+      {
+        "title": "使用Intent传递数据"
+      },
+      {
+        "title": "使用Application缓存当前登录的用户信息",
+        "result": true
+      },
+      {
+        "title": "使用ContentProvider实现数据共享"
+      },
+      {
+        "title": "使用SharedPreferences实现数据共享"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "减小图片占用内存的方法有( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "根据实际需要对图片进行缩放",
+        "result": true
+      },
+      {
+        "title": "用RGB_565代替RGB_888",
+        "result": true
+      },
+      {
+        "title": "本地png图片预先用TinyPNG压缩",
+        "result": true
+      },
+      {
+        "title": "使用inBItmap重复利用内存空间",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "加载Bitmap图片时，inBitmap选项有什么作用？",
+    "multi": false,
+    "choose": [
+      {
+        "title": "重复利用内存空间",
+        "result": true
+      },
+      {
+        "title": "图片压缩"
+      },
+      {
+        "title": "限制清晰度"
+      },
+      {
+        "title": "设置位图信息"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "以下符合规范的操作有( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "使用dp作为View的小单位",
+        "result": true
+      },
+      {
+        "title": "为子View和父View设置同样背景色"
+      },
+      {
+        "title": "禁止在非UI主线程操作View",
+        "result": true
+      },
+      {
+        "title": "源文件统一采用UTF-8编码",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Android 5.0以后安全性要求较高的应用应该使用( )禁止录屏",
+    "multi": false,
+    "choose": [
+      {
+        "title": "window#setFlag(LayoutParam.FLAG_BLUR_BEHIND)"
+      },
+      {
+        "title": "window#setFlag(LayoutParam.FLAG_SECURE)",
+        "result": true
+      },
+      {
+        "title": "window#setFlag(LayoutParam.FLAG_SPLIT_TOUCH)"
+      },
+      {
+        "title": "window#setFlag(LayoutParam.FLAG_KEEP_SCREEN_ON) "
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "不建议使用AnimationDrawable( )的原因是 ?",
+    "multi": false,
+    "choose": [
+      {
+        "title": "动画不流畅"
+      },
+      {
+        "title": "内存消耗过大",
+        "result": true
+      },
+      {
+        "title": "不兼容问题"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "以下关于android.app.Service的说法正确的是( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "如果Service需要处理耗时操作，可以使用IntentService实现",
+        "result": true
+      },
+      {
+        "title": "如果Service需要处理耗时操作可以通过AsyncTask实现",
+        "result": true
+      },
+      {
+        "title": "Service#onStartCommand( )方法中可以进行网络请求操作"
+      },
+      {
+        "title": "Service#onStartCommand( )是在Main Thread执行的，因此不能执行耗时操作",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "禁止使用常量初始化矢量参数构建IvParameterSpec，建议IV通过( )产生",
+    "multi": false,
+    "choose": [
+      {
+        "title": "常量初始化"
+      },
+      {
+        "title": "函数定义"
+      },
+      {
+        "title": "随机方式",
+        "result": true
+      },
+      {
+        "title": "写死变量"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "以下说法正确的有哪些?",
+    "multi": true,
+    "choose": [
+      {
+        "title": "源文件推荐统一采用UTF-8的形式进行编码",
+        "result": true
+      },
+      {
+        "title": "可多次为子View和父View设置同样背景",
+        "result": true
+      },
+      {
+        "title": "灵活使用布局，推荐merge、ViewStub来优化布局，尽可能多的减少UI布局层级"
+      },
+      {
+        "title": "不能在Activity没有完全显示时显示PopupWindow和Dialog",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "关于嵌套 Fragment的说法正确的有( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "为了避免复杂性和潜在bug,尽量不要使用嵌套 Fragment",
+        "result": true
+      },
+      {
+        "title": "可以在xm文件中定义嵌套 Fragment"
+      },
+      {
+        "title": "使用嵌套 Fragment时应注意区分 Activity的 FragmentManager和宿主 Fragment的FragmentManager,否则可能导致错误",
+        "result": true
+      },
+      {
+        "title": "嵌套 Fragment的 onActⅳityResult方法可能不会被正常调用",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "以下关于Activity #onPause( )方法中可以进行的操作是( )。",
+    "multi": false,
+    "choose": [
+      {
+        "title": "注销广播unregisterReceiver( )",
+        "result": true
+      },
+      {
+        "title": "发送同步网络请求"
+      },
+      {
+        "title": "通过FragmentTransaction的方式添加Fragment"
+      },
+      {
+        "title": "进行磁盘IO操作"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "以下关于Activty页面布局错误的做法是( )",
+    "multi": false,
+    "choose": [
+      {
+        "title": "只要实现U功能,不必关心 View Hirerachy",
+        "result": true
+      },
+      {
+        "title": "尽量少使用 View Group嵌套"
+      },
+      {
+        "title": "减少 LinearLayout的嵌套层级"
+      },
+      {
+        "title": "同样UI,使用 RelativeLayou替代 LinearLayout以减少view层级"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "在 Listview中加载图片时,需要注意( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "做好内存控制,避免内布溢出",
+        "result": true
+      },
+      {
+        "title": "做好缓存以及淘汰机制,避免重复创建"
+      },
+      {
+        "title": "为了UI效率,应该把展示过的图片都缓存起来",
+        "result": true
+      },
+      {
+        "title": "当图片不可见后,应该立即释放,避免内存占用过高",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "在主线程加载大图片会导致( )",
+    "multi": false,
+    "choose": [
+      {
+        "title": "内存溢出",
+        "result": true
+      },
+      {
+        "title": "UI卡顿"
+      },
+      {
+        "title": "崩溃"
+      },
+      {
+        "title": "图片错乱"
+      }
+    ]
+  }
+]
