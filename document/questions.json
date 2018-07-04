@@ -603,15 +603,13 @@
         "result": true
       },
       {
-        "title": "AlertDiaIog",
-        "result": true
+        "title": "AlertDiaIog"
       },
       {
         "title": "DiaIog"
       },
       {
-        "title": "PopupWindow",
-        "result": true
+        "title": "PopupWindow"
       }
     ]
   },
@@ -635,6 +633,216 @@
       {
         "title": "在某些局部刷新的场景下，强制关闭自定义View#requestLayout功能",
         "result": true
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "title": "在应用内广播敏感信息时，下面说法正确的是（）",
+    "multi": true,
+    "choose": [
+      {
+        "title": "可以通过sendBroadcast()发送隐式广播在应用内传递敏感信息"
+      },
+      {
+        "title": "可以通过sendOrderedBroadcast()方法在应用内传递敏感信息"
+      },
+      {
+        "title": "如果消息仅限于应用内，应该使用LocalBroadcastManager#sendBroadcast()发送敏感消息",
+        "result": true
+      },
+      {
+        "title": "接受敏感信息的静态BroadcastReceiver如果没有特殊原因，尽量不设置为export",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "title": "在文本大小设置中，使用以下哪种单位会使显示的字体大小会受系统设置里字体大小的影响？",
+    "multi": false,
+    "choose": [
+      {
+        "title": "dp"
+      },
+      {
+        "title": "sp",
+        "result": true
+      },
+      {
+        "title": "px"
+      },
+      {
+        "title": "pt"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "title": "以下做法错误的有哪些？",
+    "multi": true,
+    "choose": [
+      {
+        "title": "使用Textview,编写倒计时组件时，使用wrap_content设置文本大小解决适配问题",
+        "result": true
+      },
+      {
+        "title": "为避免主线程卡顿，在非UI线程绌ImageView设置背景图片",
+        "result": true
+      },
+      {
+        "title": "为解决连续显示Toast时不能取消上一次Toast消息的情况，使用一个全局的Toast对象"
+      },
+      {
+        "title": "为共享数据，可使用Intent进行数据传输"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "title": "关于应用内广播做法正确的是()",
+    "multi": false,
+    "choose": [
+      {
+        "title": "使用隐式Intent启动广播"
+      },
+      {
+        "title": "receiver组件定义属性android:exported=true"
+      },
+      {
+        "title": "使用LocalBroadcastManager处理应用内广播",
+        "result": true
+      },
+      {
+        "title": "任何形式的广播都可以"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Id资源定义推荐驼峰命名法，View组件的资源id应以View的缩写作为前缀，某些特殊控件可以使用小写字母加下划线进行命名，以下id资源的命名不符合规范的是()",
+    "multi": false,
+    "choose": [
+      {
+        "title": "某个ImageView的id定义为：<ImageViewid=\"@+id/ivUserAvatar\"…>...</ImageView>"
+      },
+      {
+        "title": "某个TextView的id定义为：<TextViewid=\"@+id/userNameI\"…>…</TextView>",
+        "result": true
+      },
+      {
+        "title": "某个Button的id定义为：<Buttonid=\"@+id/btnLogin\">…</Button>"
+      },
+      {
+        "title": "某个ProgressBar的id定义为：<ProgressBarandroid:id=\"@+id/progress_bar_login\">...</ProgressBar>"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "title": "使用()代替RGB_888，在不怎么降低视觉效果的前提下，减少内存占用",
+    "multi": false,
+    "choose": [
+      {
+        "title": "RGB_565",
+        "result": true
+      },
+      {
+        "title": "ALPHA_8"
+      },
+      {
+        "title": "ARGB_4444"
+      },
+      {
+        "title": "ARGB_8888"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Activity间通过隐式Intent跳转时，需要注意的是（）",
+    "multi": true,
+    "choose": [
+      {
+        "title": "为了防应用之间的影响，隐式Intent中Action定义尽量更详细一些",
+        "result": true
+      },
+      {
+        "title": "为了避免找不到相应的Activity造成应用异常，在发出intent之前，必须通过resolveActivity检查",
+        "result": true
+      },
+      {
+        "title": "在隐式Intent跳转时，不需要进行resolveActivity检查，直接CatchException就可以了"
+      },
+      {
+        "title": "调用系统功能例如拨打电话、发邮件等，需要遵守标准的URI格式",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "title": "以下说法中正确的是",
+    "multi": true,
+    "choose": [
+      {
+        "title": "密钥加密存储或者经过变形平理后用于加解密运算，切勿硬编码到代码中。",
+        "result": true
+      },
+      {
+        "title": "Web访ew应设置WebView#getSettings()#setAllowFileAccess(false）、WebView#getSettings()#setAllowFIleAccessFromFileURLs(false）、WebView#getSettings()#setAllowUniversaIAccessFromFiIeURLs(false)，阻止fileschemeURL的访问",
+        "result": true
+      },
+      {
+        "title": "不要使用loopback来通信敏感信息",
+        "result": true
+      },
+      {
+        "title": "Android5.0以后安全性要求较高的应用应该使用window.setFlag(LayoutParam.FLAG_SECURE）禁止录屏",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "title": "关于service启动，下列说法正确的是（）",
+    "multi": true,
+    "choose": [
+      {
+        "title": "Service都应该声明IntentFilter"
+      },
+      {
+        "title": "推荐使用隐式Intert启动Service"
+      },
+      {
+        "title": "如果使用隐式Intent，推荐使用Intent#setPackage()方法设置Intent指定包名",
+        "result": true
+      },
+      {
+        "title": "没有特殊原因，总是使用显式Intent启动或绑定Service",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "title": "执行SQL语句时，应使用（)，以免SQL注入风险",
+    "multi": true,
+    "choose": [
+      {
+        "title": "SQLiteDatabase#insert()",
+        "result": true
+      },
+      {
+        "title": "SQLiteDatabase#update()",
+        "result": true
+      },
+      {
+        "title": "SQLiteDatabase#delete()",
+        "result": true
+      },
+      {
+        "title": "SQLiteDatabase#execSQL()"
       }
     ]
   }
