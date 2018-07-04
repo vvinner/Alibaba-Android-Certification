@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "将( )属性设置为false，防止adb backup导出数据",
+    "title": "将()属性设置为false，防止adbbackup导出数据",
     "multi": false,
     "choose": [
       {
@@ -21,7 +21,7 @@
   },
   {
     "id": 2,
-    "title": "定义某个style的以下行为哪些不符合规范( )",
+    "title": "定义某个style的以下行为哪些不符合规范()",
     "multi": true,
     "choose": [
       {
@@ -29,7 +29,7 @@
         "result": true
       },
       {
-        "title": "当希望在某个BaseTheme的基础上扩展定义某个Activity的theme时，定义的style如下：<style name=\"BaseTheme.ThisActivityTheme\">… </style>"
+        "title": "当希望在某个BaseTheme的基础上扩展定义某个Activity的theme时，定义的style如下：<stylename=\"BaseTheme.ThisActivityTheme\">…</style>"
       },
       {
         "title": "live模块的style文件名称为：customstyle.xml",
@@ -43,7 +43,7 @@
   },
   {
     "id": 3,
-    "title": "以下关于Activity #onDestroy方法的描述错误的是( )",
+    "title": "以下关于Activity#onDestroy方法的描述错误的是()",
     "multi": true,
     "choose": [
       {
@@ -51,7 +51,7 @@
         "result": true
       },
       {
-        "title": "Activty子类重载该方法时，必须调用super.onDestroy( )"
+        "title": "Activty子类重载该方法时，必须调用super.onDestroy()"
       },
       {
         "title": "应该在该方法注销之前注册的BroadcastReceiver"
@@ -64,7 +64,7 @@
   },
   {
     "id": 4,
-    "title": "以下关于使用DialogFragment替换Dialog的说法正确的是( )",
+    "title": "以下关于使用DialogFragment替换Dialog的说法正确的是()",
     "multi": true,
     "choose": [
       {
@@ -113,27 +113,27 @@
   },
   {
     "id": 6,
-    "title": "在BroadcastReceiver中进行耗时操作，下列说法正确的是( )",
+    "title": "在BroadcastReceiver中进行耗时操作，下列说法正确的是()",
     "multi": false,
     "choose": [
       {
-        "title": "在onReceive( )中可以执行耗时操作"
+        "title": "在onReceive()中可以执行耗时操作"
       },
       {
-        "title": "在onBind( )方法中可以通过new thread( )执行耗时操作"
+        "title": "在onBind()方法中可以通过newthread()执行耗时操作"
       },
       {
-        "title": "在onBind( )方法中，可以通过调用IntentService去执行耗时操作",
+        "title": "在onBind()方法中，可以通过调用IntentService去执行耗时操作",
         "result": true
       },
       {
-        "title": "在onBind( )方法中，可以通过创建ThreadPool执行耗时操作"
+        "title": "在onBind()方法中，可以通过创建ThreadPool执行耗时操作"
       }
     ]
   },
   {
     "id": 7,
-    "title": "关于组件间数据传递的说法错误的是( )",
+    "title": "关于组件间数据传递的说法错误的是()",
     "multi": false,
     "choose": [
       {
@@ -153,7 +153,7 @@
   },
   {
     "id": 8,
-    "title": "减小图片占用内存的方法有( )",
+    "title": "减小图片占用内存的方法有()",
     "multi": true,
     "choose": [
       {
@@ -196,7 +196,7 @@
   },
   {
     "id": 10,
-    "title": "以下符合规范的操作有( )",
+    "title": "以下符合规范的操作有()",
     "multi": true,
     "choose": [
       {
@@ -218,7 +218,7 @@
   },
   {
     "id": 11,
-    "title": "Android 5.0以后安全性要求较高的应用应该使用( )禁止录屏",
+    "title": "Android5.0以后安全性要求较高的应用应该使用()禁止录屏",
     "multi": false,
     "choose": [
       {
@@ -232,13 +232,13 @@
         "title": "window#setFlag(LayoutParam.FLAG_SPLIT_TOUCH)"
       },
       {
-        "title": "window#setFlag(LayoutParam.FLAG_KEEP_SCREEN_ON) "
+        "title": "window#setFlag(LayoutParam.FLAG_KEEP_SCREEN_ON)"
       }
     ]
   },
   {
     "id": 12,
-    "title": "不建议使用AnimationDrawable( )的原因是 ?",
+    "title": "不建议使用AnimationDrawable()的原因是?",
     "multi": false,
     "choose": [
       {
@@ -255,7 +255,7 @@
   },
   {
     "id": 13,
-    "title": "以下关于android.app.Service的说法正确的是( )",
+    "title": "以下关于android.app.Service的说法正确的是()",
     "multi": true,
     "choose": [
       {
@@ -267,17 +267,17 @@
         "result": true
       },
       {
-        "title": "Service#onStartCommand( )方法中可以进行网络请求操作"
+        "title": "Service#onStartCommand()方法中可以进行网络请求操作"
       },
       {
-        "title": "Service#onStartCommand( )是在Main Thread执行的，因此不能执行耗时操作",
+        "title": "Service#onStartCommand()是在MainThread执行的，因此不能执行耗时操作",
         "result": true
       }
     ]
   },
   {
     "id": 14,
-    "title": "禁止使用常量初始化矢量参数构建IvParameterSpec，建议IV通过( )产生",
+    "title": "禁止使用常量初始化矢量参数构建IvParameterSpec，建议IV通过()产生",
     "multi": false,
     "choose": [
       {
@@ -319,33 +319,33 @@
   },
   {
     "id": 16,
-    "title": "关于嵌套 Fragment的说法正确的有( )",
+    "title": "关于嵌套Fragment的说法正确的有()",
     "multi": true,
     "choose": [
       {
-        "title": "为了避免复杂性和潜在bug,尽量不要使用嵌套 Fragment",
+        "title": "为了避免复杂性和潜在bug,尽量不要使用嵌套Fragment",
         "result": true
       },
       {
-        "title": "可以在xm文件中定义嵌套 Fragment"
+        "title": "可以在xm文件中定义嵌套Fragment"
       },
       {
-        "title": "使用嵌套 Fragment时应注意区分 Activity的 FragmentManager和宿主 Fragment的FragmentManager,否则可能导致错误",
+        "title": "使用嵌套Fragment时应注意区分Activity的FragmentManager和宿主Fragment的FragmentManager,否则可能导致错误",
         "result": true
       },
       {
-        "title": "嵌套 Fragment的 onActⅳityResult方法可能不会被正常调用",
+        "title": "嵌套Fragment的onActⅳityResult方法可能不会被正常调用",
         "result": true
       }
     ]
   },
   {
     "id": 17,
-    "title": "以下关于Activity #onPause( )方法中可以进行的操作是( )。",
+    "title": "以下关于Activity#onPause()方法中可以进行的操作是()。",
     "multi": false,
     "choose": [
       {
-        "title": "注销广播unregisterReceiver( )",
+        "title": "注销广播unregisterReceiver()",
         "result": true
       },
       {
@@ -361,27 +361,27 @@
   },
   {
     "id": 18,
-    "title": "以下关于Activty页面布局错误的做法是( )",
+    "title": "以下关于Activty页面布局错误的做法是()",
     "multi": false,
     "choose": [
       {
-        "title": "只要实现U功能,不必关心 View Hirerachy",
+        "title": "只要实现U功能,不必关心ViewHirerachy",
         "result": true
       },
       {
-        "title": "尽量少使用 View Group嵌套"
+        "title": "尽量少使用ViewGroup嵌套"
       },
       {
-        "title": "减少 LinearLayout的嵌套层级"
+        "title": "减少LinearLayout的嵌套层级"
       },
       {
-        "title": "同样UI,使用 RelativeLayou替代 LinearLayout以减少view层级"
+        "title": "同样UI,使用RelativeLayou替代LinearLayout以减少view层级"
       }
     ]
   },
   {
     "id": 19,
-    "title": "在 Listview中加载图片时,需要注意( )",
+    "title": "在Listview中加载图片时,需要注意()",
     "multi": true,
     "choose": [
       {
@@ -403,7 +403,7 @@
   },
   {
     "id": 20,
-    "title": "在主线程加载大图片会导致( )",
+    "title": "在主线程加载大图片会导致()",
     "multi": false,
     "choose": [
       {
@@ -418,6 +418,223 @@
       },
       {
         "title": "图片错乱"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "关于ViewHolder的说法错误的是()",
+    "multi": false,
+    "choose": [
+      {
+        "title": "使用ViewHolder主要是为了避免多次创建vew,降低内存占用并提升UI流畅度"
+      },
+      {
+        "title": "ViewHolder仅设置需要更新的属性即可",
+        "result": true
+      },
+      {
+        "title": "ViewHolder不仅适用于ListView的场景"
+      },
+      {
+        "title": "getView中需要更新ViewHolder的所有属性"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "关于RGB_565和RGB_888,以下说法正确的是()",
+    "multi": true,
+    "choose": [
+      {
+        "title": "RGB_555比RGB_888清晰"
+      },
+      {
+        "title": "RGB_888比RGB_565清晰",
+        "result": true
+      },
+      {
+        "title": "RGB_565占用内存更少",
+        "result": true
+      },
+      {
+        "title": "若视觉效果相似,应尽可能使用RGB_565",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "加密算法:使用不安全的Hash算法加密信息,存在被破解的风险,建议使用()等安全性更高的Hash算法",
+    "multi": false,
+    "choose": [
+      {
+        "title": "SHA-256",
+        "result": true
+      },
+      {
+        "title": "MD5"
+      },
+      {
+        "title": "SHA-1"
+      },
+      {
+        "title": "SHA-128"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "以下哪些方式可以避免引发全局layout刷新?",
+    "multi": true,
+    "choose": [
+      {
+        "title": "设置固定的View大小的宽高",
+        "result": true
+      },
+      {
+        "title": "调用View的layout方法修改位置",
+        "result": true
+      },
+      {
+        "title": "通过修改Canvas位置并且调用invalidate(intI,intt，intr，intb）等方式限定刷新区域",
+        "result": true
+      },
+      {
+        "title": "通过设置一个是否允许requestLayout的变量，然后重写控件的requestlayout、onSizeChanged方法，判断控件的大小没有改变的情况下，当进入requestLayout的时候，直接返回而不调用super的requestLayout方法",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "当添加Fragment时，以下做法正确的是()",
+    "multi": true,
+    "choose": [
+      {
+        "title": "避免使用FragmentTransaction#commitAllowingstateLoss()",
+        "result": true
+      },
+      {
+        "title": "在Activity#onSaveInstancestate()方法之后调用FragmentTransaction#commit()没有问题"
+      },
+      {
+        "title": "使用FragmentTransaction#commitllowingstateLoss()会导致用户UI状态丢失，降低用户体验",
+        "result": true
+      },
+      {
+        "title": "FragmentTransaction#commit()调用时机不对可能会导致java.lang.lllegaIStateException",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "在Activity进行较大数据量的通信时，以下选项中建议使用的有()",
+    "multi": true,
+    "choose": [
+      {
+        "title": "Intent+Serializable"
+      },
+      {
+        "title": "Intent+Parcelable"
+      },
+      {
+        "title": "EventBus",
+        "result": true
+      },
+      {
+        "title": "文件"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "title": "以下关于文件与数据库说法正确的是（）",
+    "multi": true,
+    "choose": [
+      {
+        "title": "当使用外部存储时，必须检查外部存储的可用性。",
+        "result": true
+      },
+      {
+        "title": "任何时候不要硬编码文件路径，请使用Android文件系统API访问。",
+        "result": true
+      },
+      {
+        "title": "数据库Cursor必须确保使用完后关闭，以免内存泄漏。",
+        "result": true
+      },
+      {
+        "title": "多线程操作写入数据库时，需要使用事务，以免出现同步问题。",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "title": "关于动画，以下说法正确的是（）",
+    "multi": true,
+    "choose": [
+      {
+        "title": "Activity不可见时应该及时关闭动画。",
+        "result": true
+      },
+      {
+        "title": "在动画结束的回调中，应该判断需要用到的资源是否已经被释放了",
+        "result": true
+      },
+      {
+        "title": "Animation.AnimationListener#onAnimationEnd()回调可以准确可靠地告知动画结束时机"
+      },
+      {
+        "title": "应该根据设备情况选择性开启复杂动画",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "title": "为便于随Activity生命周期管理对话框/弹出浮层的生命周期，推荐使用以下哪种view?",
+    "multi": false,
+    "choose": [
+      {
+        "title": "DiaIogFragment",
+        "result": true
+      },
+      {
+        "title": "AlertDiaIog",
+        "result": true
+      },
+      {
+        "title": "DiaIog"
+      },
+      {
+        "title": "PopupWindow",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "title": "关于局部频繁刷新View，如何避免全局重新布局的做法正确的是（）",
+    "multi": true,
+    "choose": [
+      {
+        "title": "需刷新的View严格指明宽高，比如倒计时组件",
+        "result": true
+      },
+      {
+        "title": "调用View#layout()方法更新位置，比如弹幕",
+        "result": true
+      },
+      {
+        "title": "使用View#invalidatc(intl，intt，intr，intb）强制刷新部分区域",
+        "result": true
+      },
+      {
+        "title": "在某些局部刷新的场景下，强制关闭自定义View#requestLayout功能",
+        "result": true
       }
     ]
   }
