@@ -102,7 +102,7 @@
         "result": true
       },
       {
-        "title": "不要广播敏感信息，只能在本应^使用Loca旧roadcast，避免被别的应用收到，或者setPackage做限制",
+        "title": "不要广播敏感信息，只能在本应使用LocalBroadcast，避免被别的应用收到，或者setPackage做限制",
         "result": true
       },
       {
@@ -169,7 +169,7 @@
         "result": true
       },
       {
-        "title": "使用inBItmap重复利用内存空间",
+        "title": "使用inBitmap重复利用内存空间",
         "result": true
       }
     ]
@@ -238,7 +238,7 @@
   },
   {
     "id": 12,
-    "title": "不建议使用AnimationDrawable()的原因是?",
+    "title": "不建议使用AnimationDrawable的原因是()?",
     "multi": false,
     "choose": [
       {
@@ -365,7 +365,7 @@
     "multi": false,
     "choose": [
       {
-        "title": "只要实现U功能,不必关心ViewHirerachy",
+        "title": "只要实现UI功能,不必关心ViewHirerachy",
         "result": true
       },
       {
@@ -497,7 +497,7 @@
         "result": true
       },
       {
-        "title": "通过修改Canvas位置并且调用invalidate(intI,intt，intr，intb）等方式限定刷新区域",
+        "title": "通过修改Canvas位置并且调用invalidate(int l,int t，int r，int b）等方式限定刷新区域",
         "result": true
       },
       {
@@ -577,7 +577,7 @@
     "multi": true,
     "choose": [
       {
-        "title": "Activity不可见时应该及时关闭动画。",
+        "title": "Activity不可见时,应该及时关闭动画。",
         "result": true
       },
       {
@@ -599,14 +599,14 @@
     "multi": false,
     "choose": [
       {
-        "title": "DiaIogFragment",
+        "title": "DialogFragment",
         "result": true
       },
       {
-        "title": "AlertDiaIog"
+        "title": "AlertDialog"
       },
       {
-        "title": "DiaIog"
+        "title": "Dialog"
       },
       {
         "title": "PopupWindow"
@@ -627,7 +627,7 @@
         "result": true
       },
       {
-        "title": "使用View#invalidatc(intl，intt，intr，intb）强制刷新部分区域",
+        "title": "使用View#invalidate(int l，int t，int r，int b）强制刷新部分区域",
         "result": true
       },
       {
@@ -724,17 +724,17 @@
     "multi": false,
     "choose": [
       {
-        "title": "某个ImageView的id定义为：<ImageViewid=\"@+id/ivUserAvatar\"…>...</ImageView>"
+        "title": "某个ImageView的id定义为：<ImageView id=\"@+id/ivUserAvatar\"…>...</ImageView>"
       },
       {
-        "title": "某个TextView的id定义为：<TextViewid=\"@+id/userNameI\"…>…</TextView>",
+        "title": "某个TextView的id定义为：<TextView id=\"@+id/userNameI\"…>…</TextView>",
         "result": true
       },
       {
-        "title": "某个Button的id定义为：<Buttonid=\"@+id/btnLogin\">…</Button>"
+        "title": "某个Button的id定义为：<Button id=\"@+id/btnLogin\">…</Button>"
       },
       {
-        "title": "某个ProgressBar的id定义为：<ProgressBarandroid:id=\"@+id/progress_bar_login\">...</ProgressBar>"
+        "title": "某个ProgressBar的id定义为：<ProgressBar android:id=\"@+id/progress_bar_login\">...</ProgressBar>"
       }
     ]
   },
@@ -790,7 +790,7 @@
         "result": true
       },
       {
-        "title": "Web访ew应设置WebView#getSettings()#setAllowFileAccess(false）、WebView#getSettings()#setAllowFIleAccessFromFileURLs(false）、WebView#getSettings()#setAllowUniversaIAccessFromFiIeURLs(false)，阻止fileschemeURL的访问",
+        "title": "Web访ew应设置WebView#getSettings()#setAllowFileAccess(false）、WebView#getSettings()#setAllowFileAccessFromFileURLs(false）、WebView#getSettings()#setAllowUniversaIAccessFromFiIeURLs(false)，阻止fileschemeURL的访问",
         "result": true
       },
       {
@@ -843,6 +843,499 @@
       },
       {
         "title": "SQLiteDatabase#execSQL()"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "title": "通过Intent在Android基础组件之间传递大数据可能导致( )",
+    "multi": false,
+    "choose": [
+      {
+        "title": "空指针异常"
+      },
+      {
+        "title": "OOM",
+        "result": true
+      },
+      {
+        "title": "ANR"
+      },
+      {
+        "title": "无异常"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "title": "以下color资源命名不符合规范的有( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "<color name=“loadingdialogbg”>#33b5e5e5</color>",
+        "result": true
+      },
+      {
+        "title": "<color name=“live_reward_btn_bg”>#33b5e5e5</color>"
+      },
+      {
+        "title": "<color name=“live_reward_btn_bg”>#b5e5e5</color>"
+      },
+      {
+        "title": "<color name=“live_reward_btn_bg”>#333</color>",
+        "result": true
+      },
+      {
+        "title": "<color name=“live_reward_btn_bg”>#00333333</color>"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Activity#onSaveInstancestate( )方法中，适合执行的操作有 ",
+    "multi": false,
+    "choose": [
+      {
+        "title": "文件写入"
+      },
+      {
+        "title": "更新Sqllite"
+      },
+      {
+        "title": "保存UI控件属性",
+        "result": true
+      },
+      {
+        "title": "更新SharedPreferences"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "title": "某个直播业务模块名称为live，请问其Android工程中res目录下资源名称符合规范的有( )。",
+    "multi": true,
+    "choose": [
+      {
+        "title": "live_activity_main_.xml",
+        "result": true
+      },
+      {
+        "title": "popup_anim.xml"
+      },
+      {
+        "title": "live_loading_icon.xml",
+        "result": true
+      },
+      {
+        "title": "navigation_menu.xml"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "title": "多进程模型的APP，应该注意哪些( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "在Application的业务初始化代码中加入进程判断，确保只在自己需要的进程初始化。特别是后台进程减少不必要的业务初始化",
+        "result": true
+      },
+      {
+        "title": "禁止在多进程之间用SharedPreferences共享数据，虽然可以(MODE_MULTI_PROCESS),但官方已不推荐",
+        "result": true
+      },
+      {
+        "title": "多进程容易导致内存不足"
+      },
+      {
+        "title": "多进程Crash率会升高"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Activity间隐式Intent进行跳转时，建议先使用PackageManager#resolveActivity( )判断是能够跳转成功，是为了避免以下哪种Runtime异常？",
+    "multi": false,
+    "choose": [
+      {
+        "title": "SendIntentException"
+      },
+      {
+        "title": "SecurityException"
+      },
+      {
+        "title": "ActivityNotFoundException",
+        "result": true
+      },
+      {
+        "title": "NameNotFoundException"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "title": "当应用开发过程中需要使用BroadcastReceiver进行广播处理的时候，以下操作错误的是( )。",
+    "multi": false,
+    "choose": [
+      {
+        "title": "registerReceiver( )和unregisterReceiver( )不必成对出现",
+        "result": true
+      },
+      {
+        "title": "使用LocalBroadcastManager处理应用内广播"
+      },
+      {
+        "title": "onReceive方法中对Intent数据做安全性校验，避免注入攻击"
+      },
+      {
+        "title": "尽量在Activity的inResume/onPuase方法中注册和注销广播"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Executors返回的线程池对象有哪些弊端( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "可能会堆积大量的请求，从而导致OOM",
+        "result": true
+      },
+      {
+        "title": "可能会堆积大量的线程，从而导致OOM",
+        "result": true
+      },
+      {
+        "title": "内部有Bug，稳定性差"
+      },
+      {
+        "title": "线程调度慢"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "title": "ThreadPoolExecutor设置线程存活时间(setKeepAliveTime)的目的是( )",
+    "multi": false,
+    "choose": [
+      {
+        "title": "设置的时间一到就回收线程"
+      },
+      {
+        "title": "延长线程存活时间"
+      },
+      {
+        "title": "确保空闲时线程能被释放",
+        "result": true
+      },
+      {
+        "title": "没有效果"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "title": "以下关于BroadcastReceiver#onReceive( )的说法正确的是( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "该方法可以执行IO操作"
+      },
+      {
+        "title": "如果该方法耗时超过10s，则由可能会被系统回收",
+        "result": true
+      },
+      {
+        "title": "该方法在Main Thread执行",
+        "result": true
+      },
+      {
+        "title": "可以通过android.content.Context#Receiver(BroadcastReceiver,IntentFilter,String,android.os.Handler)方法让onReceive方法在非MainThread执行",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "title": "以下说法正确的是( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "当时有外部存储时，必须检查外部存储的可用性",
+        "result": true
+      },
+      {
+        "title": "本地加密秘钥不能硬编码在代码中，更不能使用SharedPreferences等本地持久化机制存储。应选择Android自身的秘钥库(KeyStore)机制或者其他安全性更高的安全解决方案保存",
+        "result": true
+      },
+      {
+        "title": "子线程中不能更新界面。更新界面必须在主线程中进行，网络操作不能再主线程中调用",
+        "result": true
+      },
+      {
+        "title": "应用程序在加解密时，使用硬编码在程序中的秘钥。攻击者通过反编译拿到秘钥可以轻易破解APP通信数据",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Android APP在HTTPS通信中，验证策略需要改成( )模式",
+    "multi": false,
+    "choose": [
+      {
+        "title": "SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER"
+      },
+      {
+        "title": "SSLSocketFactory.STRICT_HOSTNAME_VERIFIER",
+        "result": true
+      },
+      {
+        "title": "SSLSocketFactory.BROWSER_COMPATIBLE_HOSTNAME_VERIFIER"
+      },
+      {
+        "title": "以上均可"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "title": "APK中的png图片，应该怎么处理",
+    "multi": false,
+    "choose": [
+      {
+        "title": "为了符合Google的规范，将同一张图片分别放到drawable-hdpi、drawable-xhdpi、drawable-xxhdpi等目录下"
+      },
+      {
+        "title": "图片用TinyPNG压缩，以减小包大小",
+        "result": true
+      },
+      {
+        "title": "尽可能使用高清大图"
+      },
+      {
+        "title": "尽可能使用原图，避免图片失真"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "title": "使用Intent方式启动Service时应注意( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "尽量使用显示Intent启动Service",
+        "result": true
+      },
+      {
+        "title": "Service组件避免定义Intent Filter",
+        "result": true
+      },
+      {
+        "title": "不必要外露的Service设置export=false",
+        "result": true
+      },
+      {
+        "title": "调用setPackage( )方法将Intent的解析结果限定在本应用内",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "title": "以下关于Intent中携带敏感信息的说法正确的是( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "隐式Intent中尽量不要携带敏感信息，避免被外部恶意程序注册的BroadcastReceiver劫持Intent",
+        "result": true
+      },
+      {
+        "title": "使用LocalBroadcastManager处理含敏感信息的广播，避免Intent拦截和恶意注入",
+        "result": true
+      },
+      {
+        "title": "Intent的数据内容不必关心。只要应用功能测试通过就可以"
+      },
+      {
+        "title": "如果需要携带敏感信息。Intent需要使用显示方式。指明目标Component",
+        "result": true
+      },
+      {
+        "title": "不必要导出的组件设置android:export=false",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "title": "某个直播业务模块名称为live，当定义其布局文件( Layout)时，请问如下哪些资源文件名称不符合规范( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "live_activity_main_.xml"
+      },
+      {
+        "title": "base_fragment_.xml",
+        "result": true
+      },
+      {
+        "title": "live_dialog_loading.xml"
+      },
+      {
+        "title": "showaccountfragment.xml",
+        "result": true
+      },
+      {
+        "title": "live_recycle_item_homepage.xml"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "title": "以下关于定义一个drawable文件的说法错误的是",
+    "multi": true,
+    "choose": [
+      {
+        "title": "所有drawable文件都放在drawable目录，不区分屏幕密度",
+        "result": true
+      },
+      {
+        "title": "为不同屏幕密度的设备都提供一组drawable"
+      },
+      {
+        "title": "为了精简apk整包大小，在满足需求并且了解清楚用户设备分布的情况的前提下，只支持几种屏幕密度的drawable、比如仅定义xhdpi中的drawable文件"
+      },
+      {
+        "title": "在xhdpi目录下定义live_reward_btn_pressed.png"
+      },
+      {
+        "title": "在xxxhdpi目录下放置不满足设备屏幕密度的小图",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "title": "使用gif要注意什么",
+    "multi": true,
+    "choose": [
+      {
+        "title": "和普通图片样，没有太多特殊"
+      },
+      {
+        "title": "需要注意单个gif的大小",
+        "result": true
+      },
+      {
+        "title": "注意控制单个页面同时播放的gif个数",
+        "result": true
+      },
+      {
+        "title": "gif内存占用更大，需要注意控制内存",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "title": "以下哪些操作可以在主线程执行",
+    "multi": false,
+    "choose": [
+      {
+        "title": "更新界面",
+        "result": true
+      },
+      {
+        "title": "IO操作"
+      },
+      {
+        "title": "网络操作"
+      },
+      {
+        "title": "耗时逻辑"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "title": "在Service中进行耗时操作，说法正确的是( )",
+    "multi": false,
+    "choose": [
+      {
+        "title": "在onStartCommand( )中可以执行耗时操作"
+      },
+      {
+        "title": "在onBind( )中可以执行耗时操作"
+      },
+      {
+        "title": "在onCreate( )中可以执行耗时操作"
+      },
+      {
+        "title": "在IntentService的onHandleIntent()中可以执行耗时操作",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "title": "以下哪种使用可能会造成内存问题",
+    "multi": true,
+    "choose": [
+      {
+        "title": "Application对象中存储大量缓存数据",
+        "result": true
+      },
+      {
+        "title": "使用AnimationDrawable加载大量图片",
+        "result": true
+      },
+      {
+        "title": "使用Adapter时，使用了ViewHolder做缓存"
+      },
+      {
+        "title": "在布局设计时，不能使用Scrollview包裹ListView/GridView/ExpandableListView"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "title": "关于Service启动，下列说法正确的是( )",
+    "multi": true,
+    "choose": [
+      {
+        "title": "Service都应该声明IntentFilter"
+      },
+      {
+        "title": "推荐使用隐式Intent启动Service"
+      },
+      {
+        "title": "如果使用隐式Intent，推荐使用Intent#setPackage( )方法设置Intent指定包名",
+        "result": true
+      },
+      {
+        "title": "没有特殊原因，总是使用显示Intent启动或绑定Service",
+        "result": true
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "title": "在Activity未初始化完成时，显示PopupWindow或者Dialog会导致如下哪种异常？",
+    "multi": false,
+    "choose": [
+      {
+        "title": "InflateException"
+      },
+      {
+        "title": "lllegaStateException"
+      },
+      {
+        "title": "BadTokenException",
+        "result": true
+      },
+      {
+        "title": "UnsupportedOperationException"
       }
     ]
   }
