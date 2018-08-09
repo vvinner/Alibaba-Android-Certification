@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseTheme.AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/bg_color</item>
+        <item name="android:textColorHint">@color/hint_txt</item>
+        <item name="android:textColor">@color/black_txt</item>
+        <item name="android:activityOpenEnterAnimation">@anim/x_push_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/x_push_activity</item>
+        <item name="android:activityCloseEnterAnimation">@anim/x_push_finish_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/x_push_out</item>
+        <!--状态栏颜色-->
+        <item name="android:colorPrimaryDark">#EE361B</item>
+        <item name="android:colorPrimary">@color/theme_color</item>
+        <!--开启专场动画-->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+</resources>

@@ -1,0 +1,59 @@
+<resources>
+    <style name="BaseTheme">
+        <item name="android:windowBackground">@color/bg_color</item>
+        <item name="android:textColorHint">@color/hint_txt</item>
+        <item name="android:textColor">@color/black_txt</item>
+        <item name="android:activityOpenEnterAnimation">@anim/x_push_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/x_push_activity</item>
+        <item name="android:activityCloseEnterAnimation">@anim/x_push_finish_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/x_push_out</item>
+    </style>
+
+    <style name="BaseTheme.AppTheme" parent="@android:style/Theme.Black.NoTitleBar">
+    </style>
+
+    <style name="AlphaActivity">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+
+    <style name="divider_vertical"> <!-- 垂直分割线 -->
+        <item name="android:layout_width">0.1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">#d4d4d4</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="divider_horizontal"> <!-- 水平分割线 -->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:background">#d4d4d4</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ProgressDialogStyle" parent="DialogStyle">
+        <item name="android:backgroundDimEnabled">false</item> <!-- 模糊 -->
+    </style>
+    <style name="padding">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="dialogAnim" parent="android:Animation" >
+        <item name="android:windowEnterAnimation">@anim/dialog_show</item>
+        <item name="android:windowExitAnimation">@anim/dialog_dismiss</item>
+    </style>
+
+</resources>

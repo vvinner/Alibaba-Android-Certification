@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingTop="15dp"
+              android:layout_height="90dp">
+    <TextView
+        android:id="@+id/seek_go"
+        android:textColor="@color/hint_txt"
+        android:text="前往未答题位置 >>"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/seek_now_page"
+        android:textColor="@color/blue"
+        android:text="前往 666"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/seek_now_page"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="1146"
+        android:maxHeight="2dp"
+        android:thumbOffset="0dp"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@drawable/knob"
+        android:progress="555"/>
+</RelativeLayout>

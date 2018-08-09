@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/bg_color"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <com.porster.gift.widget.SearchBarLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:hint="搜索答案,支持拼音中文"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"/>
+    <View style="@style/divider_horizontal"/>
+    <com.porster.gift.widget.pulltorefresh.PullToRefreshRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

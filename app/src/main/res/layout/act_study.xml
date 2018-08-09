@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:background="@color/bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <include
+        layout="@layout/layout_list_empty_view"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/gift_msg_dvi"
+        style="@style/divider_horizontal"
+        android:background="#FC893B"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:animateLayoutChanges="true">
+
+        <com.porster.gift.widget.XViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <Button
+            android:id="@+id/study_auto_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="停止自动答题"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <com.porster.gift.widget.md.MaterialTextView
+        android:id="@+id/g_auth_submit"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_green_btn"
+        android:gravity="center"
+        android:text="交卷"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:maskColor="@color/black_dark"
+        app:radiu="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/study_total_record_layout"
+        style="@style/padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/total_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ok"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:minWidth="60dp"
+            android:text="0"
+            android:textColor="@color/black_txt"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/total_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/no"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:minWidth="60dp"
+            android:text="0"
+            android:textColor="@color/black_txt"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="正确率"
+            android:textColor="@color/gray_txt"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/total_persent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="right"
+            android:text="0%"
+            android:textColor="@color/blue"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fail_count_tips"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="答对N次后，将移除错题，次数可以在高级设置中设定"
+        android:textColor="@color/gray_txt"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+</LinearLayout>

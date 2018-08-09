@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <com.porster.gift.widget.md.MaterialTextView
+        android:id="@+id/set_about"
+        android:layout_marginTop="10dp"
+        style="@style/padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableRight="@drawable/right"
+        android:text="关于软件"
+        android:textSize="16sp"/>
+
+    <View style="@style/divider_horizontal"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.porster.gift.widget.md.MaterialTextView
+            android:id="@+id/set_theme"
+            style="@style/padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableRight="@drawable/right"
+            android:text="自定义主题色"
+            android:textSize="16sp"/>
+
+        <com.porster.gift.widget.LightingView
+            android:id="@+id/set_lighting"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="25dp"/>
+    </FrameLayout>
+
+    <View style="@style/divider_horizontal"/>
+
+    <com.porster.gift.widget.md.MaterialTextView
+        android:id="@+id/set_high_setting"
+        style="@style/padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableRight="@drawable/right"
+        android:text="高级设置"
+        android:textSize="16sp"/>
+    <View style="@style/divider_horizontal"/>
+    <com.porster.gift.widget.md.MaterialTextView
+        android:id="@+id/set_feedback"
+        style="@style/padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableRight="@drawable/right"
+        android:text="意见反馈"
+        android:textSize="16sp"/>
+
+    <View style="@style/divider_horizontal"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.porster.gift.widget.md.MaterialTextView
+            android:id="@+id/check_update"
+            style="@style/padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableRight="@drawable/right"
+            android:text="检查更新"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/set_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="25dp"
+            android:text="v1.0"
+            android:textColor="@color/hint_txt"/>
+    </FrameLayout>
+
+</LinearLayout>

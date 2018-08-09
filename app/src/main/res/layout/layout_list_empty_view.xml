@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:gravity="center"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/empty_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/empty_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableTop="@drawable/no_data"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="加载中..."
+        android:textColor="@color/hint_txt"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/empty_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="5dp"
+        android:text="重试"
+        android:textColor="@color/black_txt"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>

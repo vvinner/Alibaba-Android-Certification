@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <View
+        style="@style/divider_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="开启自动做题功能"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/dev_auto_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View style="@style/divider_horizontal"/>
+</LinearLayout>

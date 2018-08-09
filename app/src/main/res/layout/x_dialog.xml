@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/x_dialog_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:padding="1dp"
+        android:scrollbars="vertical"
+        android:maxLines="15"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/divider1"
+        style="@style/divider_horizontal"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/x_dialog_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/x_dialog_btn_ok"
+            android:textColor="#0048fc"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/x_dialog_selector_left"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/x_dialog_btn_cancle"
+            android:textColor="#0048fc"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/divider"
+            style="@style/divider_vertical"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/x_dialog_selector_right"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/x_dialog_btn_ok"
+            android:textColor="#0048fc"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

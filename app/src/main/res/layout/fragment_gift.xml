@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <com.porster.gift.widget.md.MaterialRelativeLayout
+            android:id="@+id/g_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/e_exam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/e_exam"/>
+
+            <TextView
+                android:id="@+id/e_exam_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/e_exam"
+                android:text="技能认证"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/g_gift_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/e_exam_title"
+                android:layout_toRightOf="@+id/e_exam"
+                android:text="快来参加吧"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/hint_txt"
+                android:textSize="14sp"/>
+        </com.porster.gift.widget.md.MaterialRelativeLayout>
+
+        <View
+            style="@style/divider_vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <com.porster.gift.widget.md.MaterialRelativeLayout
+            android:id="@+id/g_history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/e_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/e_history"/>
+
+            <TextView
+                android:id="@+id/e_history_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/e_history"
+                android:text="历史成绩"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/e_history_title"
+                android:layout_toRightOf="@+id/e_history"
+                android:text="查看历史认证成绩"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/hint_txt"
+                android:textSize="14sp"/>
+        </com.porster.gift.widget.md.MaterialRelativeLayout>
+    </LinearLayout>
+    <View style="@style/divider_horizontal"/>
+</LinearLayout>

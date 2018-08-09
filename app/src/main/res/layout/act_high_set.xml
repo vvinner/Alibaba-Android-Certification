@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:animateLayoutChanges="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <TextView
+        style="@style/padding"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="答对几次移出错题"
+        android:textSize="16sp"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SeekBar
+            android:id="@+id/seekBar_failed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:max="5"
+            android:maxHeight="2dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:progress="2"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/knob"
+            android:thumbOffset="0dp"/>
+        <TextView
+            android:id="@+id/seekBar_failed_txt"
+            style="@style/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="2次"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <View style="@style/divider_horizontal"/>
+</LinearLayout>

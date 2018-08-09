@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+    <include layout="@layout/layout_list_empty_view"
+        android:visibility="gone"/>
+    <com.porster.gift.widget.md.MaterialLinearLayout
+        android:id="@+id/f_start"
+        style="@style/padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/f_start"
+            android:drawablePadding="10dp"
+            android:gravity="center|left"
+            android:text="做错题"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/fail_start_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right"
+            android:gravity="center"
+            android:textSize="16sp"/>
+    </com.porster.gift.widget.md.MaterialLinearLayout>
+
+    <View style="@style/divider_horizontal"/>
+
+    <com.porster.gift.widget.md.MaterialTextView
+        android:id="@+id/fail_delete"
+        style="@style/padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/delete"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/right"
+        android:gravity="center|left"
+        android:text="清空错题"
+        android:textSize="16sp"
+        />
+
+    <View style="@style/divider_horizontal"/>
+
+</LinearLayout>

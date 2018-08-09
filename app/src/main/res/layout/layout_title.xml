@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/theme_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title_bar_left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title_bar_left_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_bar_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/title_bar_right_img_extra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone"
+            android:padding="11dp" />
+
+        <ImageButton
+            android:id="@+id/title_bar_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:padding="11dp" />
+
+        <TextView
+            android:id="@+id/title_bar_right_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:gravity="center"
+        android:maxLength="12"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <View
+        android:id="@+id/title_bar_bottom_line"
+        style="@style/divider_horizontal"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

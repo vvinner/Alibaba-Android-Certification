@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">认证必过</string>
+
+    <string name="x_point_message">提示信息</string>
+    <string name="x_dialog_btn_ok">确定</string>
+    <string name="x_dialog_btn_cancle">取消</string>
+    <string name="study_tips">通过不断练习，来加深印象，取得更好的成绩</string>
+    <string name="study_start">开始练习</string>
+
+
+</resources>
