@@ -6,13 +6,14 @@
 题库整理 2018-06-26 - 2018-07-10
 -------
 * 目前收录63道题，其中有部分题目答案可能存在歧义。
-* 建议复习流程：练习 -> 错题 -> 模拟认证，获得90分以上基本上就稳了。
+* 建议复习流程：复习开发手册 -> 练习 -> 错题 -> 模拟认证，获得90分以上基本上就稳了。
 
 Debug版本下载
 -------
 <img width="72" height="72" src="https://github.com/vvinner/Alibaba-Android-Certification/blob/master/document/icon.png"/>
 
 [APK下载](https://github.com/vvinner/Alibaba-Android-Certification/blob/master/document/app-debug.apk)
+[开发手册下载](https://github.com/vvinner/Alibaba-Android-Certification/blob/master/document/2185b4294b6ffdea90d61edb216af591.pdf)
 
 项目创建 2018-07-20
 -------
