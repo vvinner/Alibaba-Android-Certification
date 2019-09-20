@@ -408,11 +408,11 @@
     "multi": false,
     "choose": [
       {
-        "title": "内存溢出",
-        "result": true
+        "title": "内存溢出"
       },
       {
-        "title": "UI卡顿"
+        "title": "UI卡顿",
+        "result": true
       },
       {
         "title": "崩溃"

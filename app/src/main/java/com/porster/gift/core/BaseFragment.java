@@ -1,10 +1,10 @@
 package com.porster.gift.core;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
@@ -21,7 +21,7 @@ import com.porster.gift.widget.TitleBar;
  * Created by Porster on 17/2/23.
  */
 
-public class BaseFragment extends Fragment{
+public class BaseFragment extends Fragment {
     public Context mContext;
     public View mainView;
     private SparseArray<View> mViewCache=new SparseArray<View>();

@@ -390,7 +390,7 @@
       },
       {
         "title": "做好缓存以及淘汰机制,避免重复创建",
-        "multi": true
+        "result": true
       },
       {
         "title": "为了UI效率,应该把展示过的图片都缓存起来",
@@ -408,11 +408,11 @@
     "multi": false,
     "choose": [
       {
-        "title": "内存溢出",
-        "result": true
+        "title": "内存溢出"
       },
       {
-        "title": "UI卡顿"
+        "title": "UI卡顿",
+        "result": true
       },
       {
         "title": "崩溃"
@@ -792,7 +792,7 @@
         "result": true
       },
       {
-        "title": "Web访ew应设置WebView#getSettings()#setAllowFileAccess(false）、WebView#getSettings()#setAllowFileAccessFromFileURLs(false）、WebView#getSettings()#setAllowUniversaIAccessFromFiIeURLs(false)，阻止fileschemeURL的访问",
+        "title": "Webview应设置WebView#getSettings()#setAllowFileAccess(false）、WebView#getSettings()#setAllowFileAccessFromFileURLs(false）、WebView#getSettings()#setAllowUniversaIAccessFromFiIeURLs(false)，阻止fileschemeURL的访问",
         "result": true
       },
       {

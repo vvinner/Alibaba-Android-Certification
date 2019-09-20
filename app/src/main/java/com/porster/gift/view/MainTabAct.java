@@ -1,8 +1,8 @@
 package com.porster.gift.view;
 
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -95,7 +95,7 @@ public class MainTabAct extends BaseActivity implements View.OnClickListener{
         //记录当前Fragment
         contentFragment = startFragment;
         //开启一个事物
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         String tagKey = startFragment.getTagKey();
         //不为空的话隐藏
         if (hideFragment != null) {
